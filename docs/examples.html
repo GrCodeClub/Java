@@ -45,7 +45,6 @@
                         const loadElement = document.getElementById("load");
                         selectElement.addEventListener("change", function() {
                             update_code(selectElement.value);
-                            selectElement.value = "-";
                         });
                         async function update_code(selectedValue) {
                             if (selectedValue === "-") { loadElement.innerHTML = 'Επιλέξτε ένα αρχείο για να δείτε το περιεχόμενό του.';} 
