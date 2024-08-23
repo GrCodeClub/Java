@@ -1,3 +1,5 @@
+// Σκοπός: Να υπολογίσουμε το άθροισμα των αριθμών από 1 έως 1000 σε ένα ξεχωριστό thread και να εμφανίσουμε το αποτέλεσμα στην κύρια μέθοδο.
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 import java.util.concurrent.ExecutorService;
