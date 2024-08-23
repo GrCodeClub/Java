@@ -1,3 +1,4 @@
+// Συγχρονισμός Μεταβλητών με synchronized
 class Counter {
     private int count = 0;
 
