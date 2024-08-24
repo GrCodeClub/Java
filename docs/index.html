@@ -7,14 +7,28 @@
         <script src="https://grcodeclub.github.io/js/prism.js"></script>
         <script src="https://grcodeclub.github.io/js/google.js"></script>
         <script src="https://grcodeclub.github.io/js/add/head.js"></script>    
+        <style>
+                #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      display: none;
+    }
+        </style>
     </head>
 
      <body class="programming">
-         <div id="cookie-banner">
-  <p>Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία σας στον ιστότοπό μας. Με τη χρήση αυτού του ιστότοπου, συμφωνείτε με την πολιτική μας σχετικά με τα cookies. Μπορείτε να αποδεχθείτε ή να απορρίψετε την χρήση cookies.</p>
-  <button onclick="acceptCookies()">Αποδοχή</button>
-  <button onclick="rejectCookies()">Απόρριψη</button>
-</div>
+   <!-- Cookie Banner -->
+  <div id="cookie-banner">
+    <p>Αυτός ο ιστότοπος χρησιμοποιεί cookies για την ανάλυση της επισκεψιμότητας. Συμφωνείτε με τη χρήση τους;</p>
+    <button id="accept-cookies">Αποδοχή</button>
+  </div>
+
         <div class="container">
             <div id="add_headder_and_menu"></div><script src="https://grcodeclub.github.io/js/add/headder_and_menu.js"></script>
             <div class="Text"> <!--Αρχή Κειμένου-->
