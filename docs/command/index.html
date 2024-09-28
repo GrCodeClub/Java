@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta property="og:image" content="https://grcodeclub.github.io/files-page/preview/programming/java.png"/>
-        <meta property="og:title" content="Γλώσσα Προγραμματισμού Java  | Είσοδος / Έξοδος">
+        <meta property="og:title" content="Γλώσσα Προγραμματισμού Java  | Βασικές Εντολές">
         <script src="https://grcodeclub.github.io/js/add/data.js"></script>
     </head>
 
@@ -11,9 +11,9 @@
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <a href="../"><h1 id="back_page"></h1></a>
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
-                    <h1 class="title">Είσοδος / Έξοδος</h1>
+                    <h1 class="title">Βασικές Εντολές</h1>
 
-                    <p>Δήλωση και αρχικοποίηση μεταβλητών</p>
+                    <h3 class="highlight_black">Δήλωση και αρχικοποίηση μεταβλητών</h3>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-java">public class VariableExample {
     public static void main(String[] args) {
@@ -40,17 +40,15 @@
     }
 }</code></pre></div></div>
     
-
-                    <p>Εντολή εκτύπωσης</p>
+                    <h3 class="highlight_black">Εντολή εκτύπωσης</h3>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-java">System.out.print("Κείμενο προς εκτύπωση");</code></pre></div></div>
             
-                    <p>Εντολή εκτύπωσης με αλλαγή γραμμής</p>
+                    <h3 class="highlight_black">Εντολή εκτύπωσης με αλλαγή γραμμής</h3>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-java">System.out.println("Κείμενο προς εκτύπωση");</code></pre></div></div>
             
-
-                    <p>Εισαγωγή δεδομένων από τον χρήστη </p>
+                    <h3 class="highlight_black">Εισαγωγή δεδομένων από τον χρήστη</h3>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-java">import java.util.Scanner;
 
@@ -74,6 +72,55 @@
         System.out.println("Εισαγόμενο κείμενο: " + stringInput);
         // Κλείνει το Scanner όταν δεν χρειάζεται πλέον         
         scanner.close(); 
+    }
+}</code></pre></div></div>
+
+                    <h3 class="highlight_black">Έλεγχος κατάστασης</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">int time = 22;
+if (time < 10) {
+  System.out.println("Good morning.");
+} else if (time < 18) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}</code></pre></div></div>
+
+                    <h3 class="highlight_black">Βρόχος for</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}</code></pre></div></div>
+
+                    <h3 class="highlight_black">Βρόχος while</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">int i = 0;
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}</code></pre></div></div>
+
+                      <h3 class="highlight_black">Πίνακας</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">public class ArrayExample {
+    public static void main(String[] args) {
+        // Δήλωση πίνακα ακεραίων
+        int[] integerArray ;
+                    
+        // Δέσμευση μνήμης για τον πίνακα με 5 θέσεις
+        integerArray  = new int[5];
+                    
+        // Αρχικοποίηση των στοιχείων του πίνακα
+        integerArray [0] = 10;
+        integerArray [1] = 20;
+        integerArray [2] = 30;
+        integerArray [3] = 40;
+        integerArray [4] = 50;
+                    
+        // Εκτύπωση των στοιχείων του πίνακα
+        for (int i = 0; i < integerArray .length; i++) {
+            System.out.println("Στοιχείο στη θέση " + i + ": " + integerArray [i]);
+        }
     }
 }</code></pre></div></div>
               
