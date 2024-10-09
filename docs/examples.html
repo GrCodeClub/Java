@@ -4,43 +4,35 @@
     <meta charset="UTF-8">
     <meta property="og:image" content="https://grcodeclub.github.io/files-page/preview/programming/java.png"/>
     <meta property="og:title" content="GrCode Club | Γλώσσα προγραμματισμού Java">
-    <meta charset="UTF-8">
-    <title>GrCode Club</title>
+      <title>GrCode Club</title>
     <script src="https://grcodeclub.gr/js/data.js"></script>
 </head>
 <body>
     <div id="addHeader"></div>
     <div class="container">
-        <h1 class="title">Παραδείγματα | Java</h1>
-        <label for="page-select" class="form-label">Περιεχόμενα :</label>
-        <select id="page-select" class="form-select" onchange="redirectToPage()">
+        <h1 class="title">Παραδείγματα</h1>
+
+        <label>Επιλογή Κώδικα</label>
+        <select id="code">
             <option value="-">Επιλέξτε</option>
             <option value="https://raw.githubusercontent.com/grcodeclub/java/main/InputOutput/%CE%91%CE%BD%CE%AC%CE%B3%CE%BD%CF%89%CF%83%CE%B7_A%CE%BA%CE%B5%CF%81%CE%B1%CE%AF%CE%BF%CF%85.java">Ανάγνωση Aκεραίου</option>
             <option value="https://raw.githubusercontent.com/grcodeclub/java/main/InputOutput/%CE%91%CE%BD%CE%AC%CE%B3%CE%BD%CF%89%CF%83%CE%B7_%CE%91%CE%BB%CF%86%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CE%B7%CF%84%CE%B9%CE%BA%CE%BF%CF%8D.java">Ανάγνωση Αλφαριθμητικού</option>
             <option value="https://raw.githubusercontent.com/dimitridedou/java-codes/main/CalculatorApp.java">Project: CalculatorApp.java</option>
-        </select>
+                </select>
+    
         <br><br>
         <div class="bg_preview">
             <div class="appearance">
                 <div class="space">
-                    <div class="buttons1"></div>
-                    <div class="buttons2"></div>
+                    <div class="buttons1"> </div>
+                    <div class="buttons2"> </div>
                     <div class="buttons3"></div>
                 </div>
                 <div id="name"></div>
             </div>
-            <div id="load"></div>
+            <div id="load">  </div>
         </div>
     </div>
     <div id="addFooter"></div>
-
-    <script>
-              $(document).ready(function() {
-            // Εφαρμογή του Select2
-            $('#page-select').select2();
-          
-        });
-            
-    </script>
 </body>
 </html>
